@@ -62,7 +62,7 @@ function App() {
                 <button
                   onClick={() => borrowBook(book.id)}
                   disabled={book.available_copies === 0}
-                  className="bg-blue-500 px-4 py-2 rounded-lg hover:bg-blue-600 disabled:bg-gray-600"
+                  className="bg-blue-500 px-4 py-2 rounded-lg hover:bg-blue-600 disabled:bg-gray-600 cursor-pointer"
                 >
                   Borrow
                 </button>
@@ -72,7 +72,7 @@ function App() {
                   disabled={
                     book.available_copies === book.total_copies
                   }
-                  className="bg-green-500 px-4 py-2 rounded-lg hover:bg-green-600 disabled:bg-gray-600"
+                  className="bg-green-500 px-4 py-2 rounded-lg hover:bg-green-600 disabled:bg-gray-600 cursor-pointer"
                 >
                   Return
                 </button>
